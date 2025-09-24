@@ -1,50 +1,64 @@
-import React, { useState } from 'react';
-import { MessageCircle, X, Send, User, Bot } from 'lucide-react';
+import React, { useState, useEffect, useRef } from "react";
+import { MessageCircle, X, Send, User, Bot } from "lucide-react";
 
 const FloatingAssistant = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
     {
-      type: 'bot',
-      message: "Hello! I'm your Ranchi Decor assistant. How can I help you with your interior solutions today?"
-    }
+      type: "bot",
+      message:
+        "Hello! I'm your Ranchi Decor assistant. How can I help you with your interior solutions today?",
+    },
   ]);
-  const [inputMessage, setInputMessage] = useState('');
+  const [inputMessage, setInputMessage] = useState("");
+
+  const messagesEndRef = useRef<HTMLDivElement | null>(null);
 
   const quickReplies = [
     "Request a Quote",
     "View Products",
     "Contact Information",
-    "Gallery"
+    "Gallery",
   ];
 
-  const handleSendMessage = () => {
-    if (inputMessage.trim()) {
-      setMessages(prev => [...prev, { type: 'user', message: inputMessage }]);
-      
+  // Auto scroll to latest message
+  useEffect(() => {
+    if (messagesEndRef.current) {
+      messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [messages]);
+
+  const handleSendMessage = (msg?: string) => {
+    const finalMessage = msg || inputMessage;
+    if (finalMessage.trim()) {
+      setMessages((prev) => [...prev, { type: "user", message: finalMessage }]);
+
       // Simulate bot response
       setTimeout(() => {
         let botResponse = "";
-        if (inputMessage.toLowerCase().includes('quote')) {
-          botResponse = "I'd be happy to help you get a quote! Please let me know which products you're interested in - flooring, carpets, wallpapers, blinds, or decorative panels?";
-        } else if (inputMessage.toLowerCase().includes('product')) {
-          botResponse = "We offer a wide range of premium products including flooring solutions, carpets & rugs, wallpapers, window blinds, decorative panels, and artificial greenery. Which category interests you most?";
-        } else if (inputMessage.toLowerCase().includes('contact')) {
-          botResponse = "You can reach us at +91-98765 43210 or email info@ranchidecor.com. We're located at 123 Main Road, Kanke, Ranchi, Jharkhand. Our business hours are Mon-Sat 9AM-7PM, Sunday 10AM-5PM.";
+        if (finalMessage.toLowerCase().includes("quote")) {
+          botResponse =
+            "I'd be happy to help you get a quote! Please let me know which products you're interested in - flooring, carpets, wallpapers, blinds, or decorative panels?";
+        } else if (finalMessage.toLowerCase().includes("product")) {
+          botResponse =
+            "We offer a wide range of premium products including flooring solutions, carpets & rugs, wallpapers, window blinds, decorative panels, and artificial greenery. Which category interests you most?";
+        } else if (finalMessage.toLowerCase().includes("contact")) {
+          botResponse =
+            "You can reach us at +91-98765 43210 or email info@ranchidecor.com. We're located at 123 Main Road, Kanke, Ranchi, Jharkhand. Our business hours are Mon-Sat 9AM-7PM, Sunday 10AM-5PM.";
         } else {
-          botResponse = "Thank you for your message! For detailed assistance, please call us at +91-98765 43210 or visit our showroom. Our team will be happy to help you with personalized solutions.";
+          botResponse =
+            "Thank you for your message! For detailed assistance, please call us at +91-98765 43210 or visit our showroom. Our team will be happy to help you with personalized solutions.";
         }
-        
-        setMessages(prev => [...prev, { type: 'bot', message: botResponse }]);
+
+        setMessages((prev) => [...prev, { type: "bot", message: botResponse }]);
       }, 1000);
-      
-      setInputMessage('');
+
+      setInputMessage("");
     }
   };
 
   const handleQuickReply = (reply: string) => {
-    setInputMessage(reply);
-    handleSendMessage();
+    handleSendMessage(reply);
   };
 
   return (
@@ -52,9 +66,10 @@ const FloatingAssistant = () => {
       {/* Floating Button */}
       <div className="fixed bottom-6 right-6 z-50">
         <button
+          aria-label="Open chat assistant"
           onClick={() => setIsOpen(true)}
           className={`w-16 h-16 bg-red-500 text-white rounded-full shadow-lg hover:bg-red-600 transition-all duration-300 flex items-center justify-center ${
-            isOpen ? 'scale-0' : 'scale-100 animate-pulse hover:animate-none'
+            isOpen ? "scale-0" : "scale-100 animate-pulse hover:animate-none"
           }`}
         >
           <MessageCircle className="w-8 h-8" />
@@ -63,7 +78,7 @@ const FloatingAssistant = () => {
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="fixed bottom-6 right-6 w-96 h-[500px] bg-white rounded-2xl shadow-2xl z-50 flex flex-col border">
+        <div className="fixed bottom-6 right-6 w-96 max-w-[90vw] h-[500px] bg-white rounded-2xl shadow-2xl z-50 flex flex-col border">
           {/* Header */}
           <div className="bg-red-500 text-white p-4 rounded-t-2xl flex items-center justify-between">
             <div className="flex items-center space-x-3">
@@ -76,6 +91,7 @@ const FloatingAssistant = () => {
               </div>
             </div>
             <button
+              aria-label="Close chat assistant"
               onClick={() => setIsOpen(false)}
               className="text-white hover:bg-white/20 p-1 rounded-full transition-colors"
             >
@@ -89,25 +105,36 @@ const FloatingAssistant = () => {
               <div
                 key={index}
                 className={`flex items-start space-x-3 ${
-                  msg.type === 'user' ? 'flex-row-reverse space-x-reverse' : ''
+                  msg.type === "user"
+                    ? "flex-row-reverse space-x-reverse"
+                    : ""
                 }`}
               >
-                <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${
-                  msg.type === 'user' ? 'bg-red-500 text-white' : 'bg-gray-200 text-gray-600'
-                }`}>
-                  {msg.type === 'user' ? <User className="w-4 h-4" /> : <Bot className="w-4 h-4" />}
+                <div
+                  className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${
+                    msg.type === "user"
+                      ? "bg-red-500 text-white"
+                      : "bg-gray-200 text-gray-600"
+                  }`}
+                >
+                  {msg.type === "user" ? (
+                    <User className="w-4 h-4" />
+                  ) : (
+                    <Bot className="w-4 h-4" />
+                  )}
                 </div>
                 <div
                   className={`max-w-xs p-3 rounded-2xl ${
-                    msg.type === 'user'
-                      ? 'bg-red-500 text-white ml-auto'
-                      : 'bg-gray-100 text-gray-800'
+                    msg.type === "user"
+                      ? "bg-red-500 text-white ml-auto"
+                      : "bg-gray-100 text-gray-800"
                   }`}
                 >
                   <p className="text-sm">{msg.message}</p>
                 </div>
               </div>
             ))}
+            <div ref={messagesEndRef} />
           </div>
 
           {/* Quick Replies */}
@@ -135,12 +162,13 @@ const FloatingAssistant = () => {
                 type="text"
                 value={inputMessage}
                 onChange={(e) => setInputMessage(e.target.value)}
-                onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
+                onKeyDown={(e) => e.key === "Enter" && handleSendMessage()}
                 placeholder="Type your message..."
                 className="flex-1 p-3 border border-gray-300 rounded-full focus:outline-none focus:border-red-500 text-sm"
               />
               <button
-                onClick={handleSendMessage}
+                aria-label="Send message"
+                onClick={() => handleSendMessage()}
                 className="bg-red-500 text-white p-3 rounded-full hover:bg-red-600 transition-colors"
               >
                 <Send className="w-4 h-4" />

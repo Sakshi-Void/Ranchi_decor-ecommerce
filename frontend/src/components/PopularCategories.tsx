@@ -50,13 +50,20 @@ const PopularCategories = () => {
               key={index} 
               className="group cursor-pointer transform hover:scale-105 transition-all duration-300"
             >
-              <div className="w-32 h-32 mx-auto rounded-full overflow-hidden mb-4 shadow-sm group-hover:shadow-lg transition-shadow duration-300">
-                <img
-                  src={category.image}
-                  alt={category.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
+              <div className="relative w-32 h-32 mx-auto mb-4">
+                {/* Outer hover ring */}
+                <div className="absolute inset-0 rounded-full border-4 border-red-500 scale-0 group-hover:scale-110 transition-transform duration-300"></div>
+                
+                {/* Inner circle image */}
+                <div className="w-32 h-32 rounded-full overflow-hidden shadow-sm relative">
+                  <img
+                    src={category.image}
+                    alt={category.name}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
               </div>
+
               <div className="text-center">
                 <h3 className="font-semibold text-gray-900 mb-1 group-hover:text-red-500 transition-colors duration-300">
                   {category.name}

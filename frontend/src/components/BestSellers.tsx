@@ -55,38 +55,40 @@ const BestSellers = () => {
     },
   ];
 
-  const itemsPerSlide = 2; // ek slide me 2 cards
+  // Detect screen size for responsive items per slide
+  const getItemsPerSlide = () => (window.innerWidth < 768 ? 1 : 2);
+  const [itemsPerSlide, setItemsPerSlide] = useState(getItemsPerSlide());
+
+  useEffect(() => {
+    const handleResize = () => setItemsPerSlide(getItemsPerSlide());
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const [currentSlide, setCurrentSlide] = useState(0);
 
   // Track image index for each product
-  const [imageIndexes, setImageIndexes] = useState(
-    products.map(() => 0)
-  );
+  const [imageIndexes, setImageIndexes] = useState(products.map(() => 0));
 
-  // Rotate images inside each card
+  // Rotate images inside each card (slower now: 3s)
   useEffect(() => {
     const interval = setInterval(() => {
       setImageIndexes((prev) =>
         prev.map((index, i) => (index + 1) % products[i].images.length)
       );
-    }, 1000);
-
+    }, 2000);
     return () => clearInterval(interval);
   }, [products]);
 
   // Next/Prev card slide
+  const totalSlides = Math.ceil(products.length / itemsPerSlide);
+
   const nextSlide = () => {
-    setCurrentSlide(
-      (prev) => (prev + 1) % Math.ceil(products.length / itemsPerSlide)
-    );
+    setCurrentSlide((prev) => (prev + 1) % totalSlides);
   };
 
   const prevSlide = () => {
-    setCurrentSlide(
-      (prev) =>
-        (prev - 1 + Math.ceil(products.length / itemsPerSlide)) %
-        Math.ceil(products.length / itemsPerSlide)
-    );
+    setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
   };
 
   const visibleProducts = products.slice(
@@ -105,6 +107,7 @@ const BestSellers = () => {
           {/* Prev button */}
           <button
             onClick={prevSlide}
+            aria-label="Previous slide"
             className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-6 z-10 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-red-500 hover:text-white transition"
           >
             <ChevronLeft className="w-6 h-6" />
@@ -119,7 +122,7 @@ const BestSellers = () => {
               >
                 <div className="relative">
                   <img
-                    src={product.images[imageIndexes[product.id - 1]]}
+                    src={product.images[imageIndexes[i]]}
                     alt={product.name}
                     className="w-full h-48 object-cover transition-all duration-500"
                   />
@@ -162,10 +165,25 @@ const BestSellers = () => {
           {/* Next button */}
           <button
             onClick={nextSlide}
+            aria-label="Next slide"
             className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-6 z-10 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-red-500 hover:text-white transition"
           >
             <ChevronRight className="w-6 h-6" />
           </button>
+        </div>
+
+        {/* Navigation dots */}
+        <div className="flex justify-center mt-6 space-x-2">
+          {Array.from({ length: totalSlides }).map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setCurrentSlide(i)}
+              className={`w-3 h-3 rounded-full ${
+                currentSlide === i ? "bg-red-500" : "bg-gray-300"
+              }`}
+              aria-label={`Go to slide ${i + 1}`}
+            />
+          ))}
         </div>
       </div>
     </section>
