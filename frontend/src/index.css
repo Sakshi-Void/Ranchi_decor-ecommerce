@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom sliding animation */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-33.33%); } /* slides by 1 set of products */
+}
+
+.sliding-wrapper {
+  animation: slide 12s linear infinite; /* adjust speed as needed */
+}
