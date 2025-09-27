@@ -1,0 +1,73 @@
+[
+  {
+    "id": "flooring",
+    "name": "Flooring Solutions",
+    "images": [
+      "/images/flooring/Vinyl_Flooring_1.jpg",
+      "/images/flooring/Vinyl_Flooring_2.jpg",
+      "/images/flooring/Wooden_Flooring_1.jpg",
+      "/images/flooring/SPC_Flooring_1.jpg",
+      "/images/flooring/Gym_Flooring_1.jpg",
+      "/images/flooring/Office_Flooring_1.jpg"
+    ]
+  },
+  {
+    "id": "carpets",
+    "name": "Carpets & Rugs",
+    "images": [
+      "/images/carpets/Carpet_Tiles_1.jpg",
+      "/images/carpets/Carpet_Tiles_2.jpg",
+      "/images/carpets/Customized_Carpet_1.jpg",
+      "/images/carpets/Customized_Carpet_2.jpg",
+      "/images/carpets/Wall_to_Wall_Carpet_1.jpg",
+      "/images/carpets/Wall_to_Wall_Carpet_2.jpg"
+    ]
+  },
+  {
+    "id": "wallpapers",
+    "name": "Wallpapers",
+    "images": [
+      "/images/wallpapers/Customized_Wallpaper_1.jpg",
+      "/images/wallpapers/Customized_Wallpaper_2.jpg",
+      "/images/wallpapers/Customized_Wallpaper_3.jpg",
+      "/images/wallpapers/Standard_Wallpaper_1.jpg",
+      "/images/wallpapers/Standard_Wallpaper_2.jpg",
+      "/images/wallpapers/Standard_Wallpaper_3.jpg"
+    ]
+  },
+  {
+    "id": "blinds",
+    "name": "Window Blinds",
+    "images": [
+      "/images/blinds/Roller_Blinds_1.jpg",
+      "/images/blinds/Roller_Blinds_2.jpg",
+      "/images/blinds/Roman_Blinds_1.jpg",
+      "/images/blinds/Roman_Blinds_2.jpg",
+      "/images/blinds/Vertical_Blinds_1.jpg",
+      "/images/blinds/Zebra_Blinds_1.jpg"
+    ]
+  },
+  {
+    "id": "panels",
+    "name": "Decorative Panels",
+    "images": [
+      "/images/panels/Fluted_Panels_1.jpg",
+      "/images/panels/Fluted_Panels_2.jpg",
+      "/images/panels/PVC_Panels_1.jpg",
+      "/images/panels/PVC_Panels_2.jpg",
+      "/images/panels/VV_Marble_Sheets_1.jpg",
+      "/images/panels/VV_Marble_Sheets_2.jpg"
+    ]
+  },
+  {
+    "id": "greenery",
+    "name": "Artificial Greenery",
+    "images": [
+      "/images/greenery/Artificial_Grass_1.jpg",
+      "/images/greenery/Artificial_Grass_2.jpg",
+      "/images/greenery/Vertical_Grass_Wall_1.jpg",
+      "/images/greenery/Vertical_Grass_Wall_2.jpg",
+      "/images/greenery/Vertical_Grass_Wall_3.jpg"
+    ]
+  }
+]

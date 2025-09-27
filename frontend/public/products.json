@@ -1,0 +1,734 @@
+[
+  {
+    "id": "flooring-1",
+    "category": "flooring",
+    "name": "Vinyl Flooring Classic",
+    "price": 1299,
+    "rating": 4.5,
+    "image": "/images/flooring/Vinyl_Flooring_1.jpg"
+  },
+  {
+    "id": "flooring-2",
+    "category": "flooring",
+    "name": "Vinyl Flooring Premium",
+    "price": 1499,
+    "rating": 3.7,
+    "image": "/images/flooring/Vinyl_Flooring_2.jpg"
+  },
+  {
+    "id": "flooring-3",
+    "category": "flooring",
+    "name": "Vinyl Flooring Matte",
+    "price": 1199,
+    "rating": 3.3,
+    "image": "/images/flooring//Vinyl_Flooring_3.jpg"
+  },
+  {
+    "id": "flooring-4",
+    "category": "flooring",
+    "name": "Vinyl Flooring Glossy",
+    "price": 1399,
+    "rating": 4.6,
+    "image": "/images/flooring/Vinyl_Flooring_4.jpg"
+  },
+  {
+    "id": "flooring-5",
+    "category": "flooring",
+    "name": "Vinyl Flooring Designer",
+    "price": 1599,
+    "rating": 4.8,
+    "image": "/images/flooring/Vinyl_Flooring_5.jpg"
+  },
+  {
+    "id": "flooring-6",
+    "category": "flooring",
+    "name": "Wooden Flooring Classic",
+    "price": 2299,
+    "rating": 4.6,
+    "image": "/images/flooring/Wooden_Flooring_1.jpg"
+  },
+  {
+    "id": "flooring-7",
+    "category": "flooring",
+    "name": "Wooden Flooring Premium",
+    "price": 2599,
+    "rating": 4.9,
+    "image": "/images/flooring/Wooden_Flooring_2.jpg"
+  },
+  {
+    "id": "flooring-8",
+    "category": "flooring",
+    "name": "Wooden Flooring Rustic",
+    "price": 2199,
+    "rating": 4.4,
+    "image": "/images/flooring/Wooden_Flooring_3.jpg"
+  },
+  {
+    "id": "flooring-9",
+    "category": "flooring",
+    "name": "Wooden Flooring Modern",
+    "price": 2399,
+    "rating": 4.7,
+    "image": "/images/flooring/Wooden_Flooring_4.jpg"
+  },
+  {
+    "id": "flooring-10",
+    "category": "flooring",
+    "name": "SPC Flooring Classic",
+    "price": 1799,
+    "rating": 4.5,
+    "image": "/images/flooring/SPC_Flooring_1.jpg"
+  },
+  {
+    "id": "flooring-11",
+    "category": "flooring",
+    "name": "SPC Flooring Premium",
+    "price": 1999,
+    "rating": 4.7,
+    "image": "/images/flooring/SPC_Flooring_2.jpg"
+  },
+  {
+    "id": "flooring-12",
+    "category": "flooring",
+    "name": "SPC Flooring Matte",
+    "price": 1699,
+    "rating": 4.3,
+    "image": "/images/flooring/SPC_Flooring_3.jpg"
+  },
+  {
+    "id": "flooring-13",
+    "category": "flooring",
+    "name": "SPC Flooring Glossy",
+    "price": 1899,
+    "rating": 4.6,
+    "image": "/images/flooring/SPC_Flooring_4.jpg"
+  },
+  {
+    "id": "flooring-14",
+    "category": "flooring",
+    "name": "Gym Flooring Basic",
+    "price": 1299,
+    "rating": 4.4,
+    "image": "/images/flooring/Gym_Flooring_1.jpg"
+  },
+  {
+    "id": "flooring-15",
+    "category": "flooring",
+    "name": "Gym Flooring Premium",
+    "price": 1599,
+    "rating": 4.8,
+    "image": "/images/flooring/Gym_Flooring_2.jpg"
+  },
+  {
+    "id": "flooring-16",
+    "category": "flooring",
+    "name": "Gym Flooring Advanced",
+    "price": 1899,
+    "rating": 4.9,
+    "image": "/images/flooring/Gym_Flooring_3.jpg"
+  },
+  {
+    "id": "flooring-17",
+    "category": "flooring",
+    "name": "Gym Flooring Heavy-Duty",
+    "price": 1999,
+    "rating": 4.7,
+    "image": "/images/flooring/Gym_Flooring_4.jpg"
+  },
+  {
+    "id": "flooring-18",
+    "category": "flooring",
+    "name": "Office Flooring Standard",
+    "price": 1499,
+    "rating": 4.3,
+    "image": "/images/flooring/Office_Flooring_1.jpg"
+  },
+  {
+    "id": "flooring-19",
+    "category": "flooring",
+    "name": "Office Flooring Premium",
+    "price": 1899,
+    "rating": 4.6,
+    "image": "/images/flooring/Office_Flooring_2.jpg"
+  },
+  {
+    "id": "flooring-20",
+    "category": "flooring",
+    "name": "Office Flooring Stylish",
+    "price": 1799,
+    "rating": 4.5,
+    "image": "/images/flooring/Office_Flooring_3.jpg"
+  },
+    {
+    "id": "flooring-21",
+    "category": "flooring",
+    "name": "Office Flooring Designer",
+    "price": 1999,
+    "rating": 4.7,
+    "image": "/images/flooring/Office_Flooring_4.jpg"
+  },
+  {
+    "id": "carpet-1",
+    "category": "carpets",
+    "name": "Carpet Tiles Modern",
+    "price": 899,
+    "rating": 4.4,
+    "image": "/images/carpets/Carpet_Tiles_1.jpg"
+  },
+  {
+    "id": "carpet-2",
+    "category": "carpets",
+    "name": "Carpet Tiles Premium",
+    "price": 1099,
+    "rating": 4.6,
+    "image": "/images/carpets/Carpet_Tiles_2.jpg"
+  }
+  ,
+  {
+    "id": "carpet-3",
+    "category": "carpets",
+    "name": "Carpet Tiles Designer",
+    "price": 1199,
+    "rating": 4.7,
+    "image": "/images/carpets/Carpet_Tiles_3.jpg"
+  },
+  {
+    "id": "carpet-4",
+    "category": "carpets",
+    "name": "Carpet Tiles Matte",
+    "price": 999,
+    "rating": 4.3,
+    "image": "/images/carpets/Carpet_Tiles_4.jpg"
+  },
+  {
+    "id": "carpet-5",
+    "category": "carpets",
+    "name": "Customized Carpet Floral",
+    "price": 1599,
+    "rating": 4.5,
+    "image": "/images/carpets/Customized_Carpet_1.jpg"
+  },
+  {
+    "id": "carpet-6",
+    "category": "carpets",
+    "name": "Customized Carpet Premium",
+    "price": 1899,
+    "rating": 4.7,
+    "image": "/images/carpets/Customized_Carpet_2.jpg"
+  },
+  {
+    "id": "carpet-7",
+    "category": "carpets",
+    "name": "Customized Carpet Abstract",
+    "price": 1699,
+    "rating": 4.6,
+    "image": "/images/carpets/Customized_Carpet_3.jpg"
+  },
+  {
+    "id": "carpet-8",
+    "category": "carpets",
+    "name": "Customized Carpet Designer",
+    "price": 1799,
+    "rating": 4.8,
+    "image": "/images/carpets/Customized_Carpet_4.jpg"
+  },
+  {
+    "id": "carpet-9",
+    "category": "carpets",
+    "name": "Customized Carpet Royal",
+    "price": 1999,
+    "rating": 4.9,
+    "image": "/images/carpets/Customized_Carpet_5.jpg"
+  },
+  {
+    "id": "carpet-10",
+    "category": "carpets",
+    "name": "Wall-to-Wall Carpet Classic",
+    "price": 1499,
+    "rating": 4.4,
+    "image": "/images/carpets/Wall_to_Wall_Carpet_1.jpg"
+  },
+  {
+    "id": "carpet-11",
+    "category": "carpets",
+    "name": "Wall-to-Wall Carpet Premium",
+    "price": 1699,
+    "rating": 4.6,
+    "image": "/images/carpets/Wall_to_Wall_Carpet_2.jpg"
+  },
+  {
+    "id": "carpet-12",
+    "category": "carpets",
+    "name": "Wall-to-Wall Carpet Designer",
+    "price": 1899,
+    "rating": 4.7,
+    "image": "/images/carpets/Wall_to_Wall_Carpet_3.jpg"
+  },
+  {
+    "id": "carpet-13",
+    "category": "carpets",
+    "name": "Wall-to-Wall Carpet Royal",
+    "price": 2099,
+    "rating": 4.8,
+    "image": "/images/carpets/Wall_to_Wall_Carpet_4.jpg"
+  },
+  {
+    "id": "carpet-14",
+    "category": "carpets",
+    "name": "Wall-to-Wall Carpet Velvet",
+    "price": 1799,
+    "rating": 4.5,
+    "image": "/images/carpets/Wall_to_Wall_Carpet_5.jpg"
+  },
+  {
+    "id": "carpet-15",
+    "category": "carpets",
+    "name": "Wall-to-Wall Carpet Luxury",
+    "price": 2199,
+    "rating": 4.9,
+    "image": "/images/carpets/Wall_to_Wall_Carpet_6.jpg"
+  },
+  {
+    "id": "wallpaper-1",
+    "category": "wallpapers",
+    "name": "Customized Wallpaper Elegant",
+    "price": 1299,
+    "rating": 4.5,
+    "image": "/images/wallpapers/Customized_Wallpaper_1.jpg"
+  },
+  {
+    "id": "wallpaper-2",
+    "category": "wallpapers",
+    "name": "Customized Wallpaper Artistic",
+    "price": 1399,
+    "rating": 4.7,
+    "image": "/images/wallpapers/Customized_Wallpaper_2.jpg"
+  },
+  {
+    "id": "wallpaper-3",
+    "category": "wallpapers",
+    "name": "Customized Wallpaper Modern",
+    "price": 1499,
+    "rating": 4.6,
+    "image": "/images/wallpapers/Customized_Wallpaper_3.jpg"
+  },
+  {
+    "id": "wallpaper-4",
+    "category": "wallpapers",
+    "name": "Customized Wallpaper Luxury",
+    "price": 1599,
+    "rating": 4.8,
+    "image": "/images/wallpapers/Customized_Wallpaper_4.jpg"
+  },
+  {
+    "id": "wallpaper-5",
+    "category": "wallpapers",
+    "name": "Customized Wallpaper Abstract",
+    "price": 1699,
+    "rating": 4.5,
+    "image": "/images/wallpapers/Customized_Wallpaper_5.jpg"
+  },
+  {
+    "id": "wallpaper-6",
+    "category": "wallpapers",
+    "name": "Customized Wallpaper Premium",
+    "price": 1799,
+    "rating": 4.7,
+    "image": "/images/wallpapers/Customized_Wallpaper_6.jpg"
+  },
+  {
+    "id": "wallpaper-7",
+    "category": "wallpapers",
+    "name": "Standard Wallpaper Classic",
+    "price": 899,
+    "rating": 4.2,
+    "image": "/images/wallpapers/Standard_Wallpaper_1.jpg"
+  },
+  {
+    "id": "wallpaper-8",
+    "category": "wallpapers",
+    "name": "Standard Wallpaper Floral",
+    "price": 999,
+    "rating": 4.3,
+    "image": "/images/wallpapers/Standard_Wallpaper_2.jpg"   
+  },
+  {
+    "id": "wallpaper-9",
+    "category": "wallpapers",
+    "name": "Standard Wallpaper Modern",
+    "price": 1099,
+    "rating": 4.4,
+    "image": "/images/wallpapers/Standard_Wallpaper_3.jpg"
+  },
+  {
+    "id": "wallpaper-10",
+    "category": "wallpapers",
+    "name": "Standard Wallpaper Textured",
+    "price": 1199,
+    "rating": 4.5,
+    "image": "/images/wallpapers/Standard_Wallpaper_4.jpg"
+  },
+  {
+    "id": "wallpaper-11",
+    "category": "wallpapers",
+    "name": "Standard Wallpaper Premium",
+    "price": 1299,
+    "rating": 4.6,
+    "image": "/images/wallpapers/Standard_Wallpaper_5.jpg"
+  },
+  {
+    "id": "wallpaper-12",
+    "category": "wallpapers",
+    "name": "Standard Wallpaper Designer",
+    "price": 1399,
+    "rating": 4.7,
+    "image": "/images/wallpapers/Standard_Wallpaper_6.jpg"
+  } ,
+  {
+    "id": "blind-1",
+    "category": "blinds",
+    "name": "Roller Blinds Elegant",
+    "price": 1199,
+    "rating": 4.4,
+    "image": "/images/blinds/Roller_Blinds_1.jpg"
+  },
+  {
+    "id": "blind-2",
+    "category": "blinds",
+    "name": "Roller Blinds Premium",
+    "price": 1299,
+    "rating": 4.5,
+    "image": "/images/blinds/Roller_Blinds_2.jpg"
+  },
+  {
+    "id": "blind-3",
+    "category": "blinds",
+    "name": "Roller Blinds Modern",
+    "price": 1399,
+    "rating": 4.6,
+    "image": "/images/blinds/Roller_Blinds_3.jpg"
+  },
+  {
+    "id": "blind-4",
+    "category": "blinds",
+    "name": "Roller Blinds Classic",
+    "price": 1199,
+    "rating": 4.3,
+    "image": "/images/blinds/Roller_Blinds_4.jpg"
+  },
+  {
+    "id": "blind-5",
+    "category": "blinds",
+    "name": "Roller Blinds Designer",
+    "price": 1499,
+    "rating": 4.7,
+    "image": "/images/blinds/Roller_Blinds_5.jpg"
+  },
+  {
+    "id": "blind-6",
+    "category": "blinds",
+    "name": "Roller Blinds Luxury",
+    "price": 1599,
+    "rating": 4.8,
+    "image": "/images/blinds/Roller_Blinds_6.jpg"
+  },
+  {
+    "id": "blind-7",
+    "category": "blinds",
+    "name": "Roman Blinds Elegant",
+    "price": 1299,
+    "rating": 4.5,
+    "image": "/images/blinds/Roman_Blinds_1.jpg"                 
+  },
+  {
+    "id": "blind-8",
+    "category": "blinds",
+    "name": "Roman Blinds Premium",
+    "price": 1399,
+    "rating": 4.6,
+    "image": "/images/blinds/Roman_Blinds_2.jpg"
+  },
+  {
+    "id": "blind-9",
+    "category": "blinds",
+    "name": "Roman Blinds Classic",
+    "price": 1499,
+    "rating": 4.7,
+    "image": "/images/blinds/Roman_Blinds_3.jpg"
+  },
+  {
+    "id": "blind-10",
+    "category": "blinds",
+    "name": "Roman Blinds Luxury",
+    "price": 1699,
+    "rating": 4.8,
+    "image": "/images/blinds/Roman_Blinds_4.jpg"
+  },
+  {
+    "id": "blind-11",
+    "category": "blinds",
+    "name": "Roman Blinds Designer",
+    "price": 1799,
+    "rating": 4.9,
+    "image": "/images/blinds/Roman_Blinds_5.jpg"
+  },
+  {
+    "id": "blind-12",
+    "category": "blinds",
+    "name": "Vertical Blinds Elegant",
+    "price": 999,
+    "rating": 4.3,
+    "image": "/images/blinds/Vertical_Blinds_1.jpg"
+  },
+  {
+    "id": "blind-13",
+    "category": "blinds",
+    "name": "Vertical Blinds Premium",
+    "price": 1099,
+    "rating": 4.4,
+    "image": "/images/blinds/Vertical_Blinds_2.jpg"
+  },
+  {
+    "id": "blind-14",
+    "category": "blinds",
+    "name": "Vertical Blinds Modern",
+    "price": 1199,
+    "rating": 4.5,
+    "image": "/images/blinds/Vertical_Blinds_3.jpg"
+  },
+  {
+    "id": "blind-15",
+    "category": "blinds",
+    "name": "Vertical Blinds Luxury",
+    "price": 1299,
+    "rating": 4.6,
+    "image": "/images/blinds/Vertical_Blinds_4.jpg"
+  },
+  {
+    "id": "blind-16",
+    "category": "blinds",
+    "name": "Vertical Blinds Designer",
+    "price": 1399,
+    "rating": 4.7,
+    "image": "/images/blinds/Vertical_Blinds_5.jpg"
+  },
+  {
+    "id": "blind-17",
+    "category": "blinds",
+    "name": "Zebra Blinds Elegant",
+    "price": 1299,
+    "rating": 4.5,
+    "image": "/images/blinds/Zebra_Blinds_1.jpg"
+  },
+  {
+    "id": "blind-18",
+    "category": "blinds",
+    "name": "Zebra Blinds Premium",
+    "price": 1399,
+    "rating": 4.6,
+    "image": "/images/blinds/Zebra_Blinds_2.jpg"
+  },
+  {
+    "id": "blind-19",
+    "category": "blinds",
+    "name": "Zebra Blinds Modern",
+    "price": 1499,
+    "rating": 4.7,
+    "image": "/images/blinds/Zebra_Blinds_3.jpg"
+  },
+  {
+    "id": "blind-20",
+    "category": "blinds",
+    "name": "Zebra Blinds Luxury",
+    "price": 1599,
+    "rating": 4.8,
+    "image": "/images/blinds/Zebra_Blinds_4.jpg"
+  },
+  {
+    "id": "panel-1",
+    "category": "panels",
+    "name": "Fluted Panel Elegant",
+    "price": 1599,
+    "rating": 4.5,
+    "image": "/images/panels/Fluted_Panels_1.jpg"
+  },
+  {
+    "id": "panel-2",
+    "category": "panels",
+    "name": "Fluted Panel Premium",
+    "price": 1699,
+    "rating": 4.6,
+    "image": "/images/panels/Fluted_Panels_2.jpg"
+  },
+  {
+    "id": "panel-3",
+    "category": "panels",
+    "name": "Fluted Panel Modern",
+    "price": 1799,
+    "rating": 4.7,
+    "image": "/images/panels/Fluted_Panels_3.jpg"
+  },
+  {
+    "id": "panel-4",
+    "category": "panels",
+    "name": "Fluted Panel Luxury",
+    "price": 1899,
+    "rating": 4.8,
+    "image": "/images/panels/Fluted_Panels_4.jpg"
+  },
+  {
+    "id": "panel-5",
+    "category": "panels",
+    "name": "Fluted Panel Designer",
+    "price": 1999,
+    "rating": 4.9,
+    "image": "/images/panels/Fluted_Panels_5.jpg"
+  },
+  {
+    "id": "panel-6",
+    "category": "panels",
+    "name": "PVC Panel Classic",
+    "price": 999,
+    "rating": 4.3,
+    "image": "/images/panels/PVC_Panels_1.jpg"
+  },
+  {
+    "id": "panel-7",
+    "category": "panels",
+    "name": "PVC Panel Premium",
+    "price": 1099,
+    "rating": 4.4,
+    "image": "/images/panels/PVC_Panels_2.jpg"
+  },
+  {
+    "id": "panel-8",
+    "category": "panels",
+    "name": "PVC Panel Modern",
+    "price": 1199,
+    "rating": 4.5,
+    "image": "/images/panels/PVC_Panels_3.jpg"
+  },
+  {
+    "id": "panel-9",
+    "category": "panels",
+    "name": "PVC Panel Designer",
+    "price": 1299,
+    "rating": 4.6,
+    "image": "/images/panels/PVC_Panels_4.jpg"
+  },
+  {
+    "id": "panel-10",
+    "category": "panels",
+    "name": "VV Marble Sheet Classic",
+    "price": 1399,
+    "rating": 4.5,
+    "image": "/images/panels/VV_Marble_Sheets_1.jpg"
+  },
+  {
+    "id": "panel-11",
+    "category": "panels",
+    "name": "VV Marble Sheet Premium",
+    "price": 1499,
+    "rating": 4.6,
+    "image": "/images/panels/VV_Marble_Sheets_2.jpg"
+  },
+  {
+    "id": "panel-12",
+    "category": "panels",
+    "name": "VV Marble Sheet Modern",
+    "price": 1599,
+    "rating": 4.7,
+    "image": "/images/panels/VV_Marble_Sheets_3.jpg"
+  },
+  {
+    "id": "panel-13",
+    "category": "panels",
+    "name": "VV Marble Sheet Luxury",
+    "price": 1699,
+    "rating": 4.8,
+    "image": "/images/panels/VV_Marble_Sheets_4.jpg"
+  },
+  {
+    "id": "panel-14",
+    "category": "panels",
+    "name": "VV Marble Sheet Designer",
+    "price": 1799,
+    "rating": 4.9,
+    "image": "/images/panels/VV_Marble_Sheets_5.jpg"
+  }
+,
+  {
+    "id": "greenery-1",
+    "category": "greenery",
+    "name": "Artificial Grass Basic",
+    "price": 799,
+    "rating": 4.3,
+    "image": "/images/greenery/Artificial_Grass_1.jpg"
+  },
+  {
+    "id": "greenery-2",
+    "category": "greenery",
+    "name": "Artificial Grass Premium",
+    "price": 999,
+    "rating": 4.5,
+    "image": "/images/greenery/Artificial_Grass_2.jpg"
+  },
+  {
+    "id": "greenery-3",
+    "category": "greenery",
+    "name": "Artificial Grass Luxury",
+    "price": 1199,
+    "rating": 4.6,
+    "image": "/images/greenery/Artificial_Grass_3.jpg"
+  },
+  {
+    "id": "greenery-4",
+    "category": "greenery",
+    "name": "Artificial Grass Designer",
+    "price": 1399,
+    "rating": 4.7,
+    "image": "/images/greenery/Artificial_Grass_4.jpg"
+  },
+  {
+    "id": "greenery-5",
+    "category": "greenery",
+    "name": "Vertical Grass Wall Elegant",
+    "price": 1499,
+    "rating": 4.5,
+    "image": "/images/greenery/Vertical_Grass_Wall_1.jpg"
+  },
+  {
+    "id": "greenery-6",
+    "category": "greenery",
+    "name": "Vertical Grass Wall Premium",
+    "price": 1699,
+    "rating": 4.6,
+    "image": "/images/greenery/Vertical_Grass_Wall_2.jpg"
+  },
+  {
+    "id": "greenery-7",
+    "category": "greenery",
+    "name": "Vertical Grass Wall Modern",
+    "price": 1799,
+    "rating": 4.7,
+    "image": "/images/greenery/Vertical_Grass_Wall_3.jpg"
+  },
+  {
+    "id": "greenery-8",
+    "category": "greenery",
+    "name": "Vertical Grass Wall Luxury",
+    "price": 1899,
+    "rating": 4.8,
+    "image": "/images/greenery/Vertical_Grass_Wall_4.jpg"
+  },
+  {
+    "id": "greenery-9",
+    "category": "greenery",
+    "name": "Vertical Grass Wall Designer",
+    "price": 1999,
+    "rating": 4.9,
+    "image": "/images/greenery/Vertical_Grass_Wall_5.jpg"
+  }
+]
+
+
